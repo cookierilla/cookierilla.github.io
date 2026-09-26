@@ -15,8 +15,7 @@ const projects = [
     description:
       'A collaborative Figma concept for a digital game storefront and top-up platform, designed to make browsing and purchasing game content straightforward.',
     features: ['Storefront discovery', 'Product, cart, and top-up flows', 'Mobile-first wireframes'],
-    contribution:
-      'Participated in collaborative concept development and wireframing. Exact assigned screens are not claimed.',
+    contribution: 'Participated in collaborative concept development and wireframing.',
     technologies: ['Figma'],
     image: '/projects/nxtgn.webp',
     aspectRatio: '16 / 9',
