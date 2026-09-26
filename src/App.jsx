@@ -20,8 +20,6 @@ const projects = [
     image: '/projects/nxtgn.webp',
     aspectRatio: '16 / 9',
     imageAlt: 'Three mobile interface wireframes for the NXTgn Games digital storefront.',
-    link: 'https://github.com/cookierilla/SIA01-LAB9_2',
-    linkLabel: 'View project evidence',
   },
   {
     id: 'double-check',
@@ -307,9 +305,11 @@ function App() {
                     <ul className="tech-list" aria-label={`${project.title} technologies`}>
                       {project.technologies.map((technology) => <li key={technology}>{technology}</li>)}
                     </ul>
-                    <a className="text-link" href={project.link} target="_blank" rel="noreferrer">
-                      {project.linkLabel}<ArrowIcon />
-                    </a>
+                    {project.link && (
+                      <a className="text-link" href={project.link} target="_blank" rel="noreferrer">
+                        {project.linkLabel}<ArrowIcon />
+                      </a>
+                    )}
                   </div>
                 </div>
               </article>
